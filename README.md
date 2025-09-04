@@ -149,6 +149,9 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 Acknowledgments
 
+Citation 
+Govind, S. (2025). ChemKinetics ML/AI Prediction Models. Computational Chemistry Research. Biocharge at CSUDH
+
 ChemProp developers for the graph neural network implementation
 DeepChem team for the comprehensive chemical modeling framework
 T5Chem creators for transformer-based chemistry models
