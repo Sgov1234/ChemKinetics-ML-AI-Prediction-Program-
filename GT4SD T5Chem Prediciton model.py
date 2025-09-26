@@ -1,4 +1,4 @@
-#Models not loading and T5Chem not predcitng correct products.(fix other moels and try find new models)
+#Models not loading and T5Chem not predcitng correct products.(fix other moels and try find new models or define organometallic/organic heuistrics rule)
 
 import requests
 import numpy as np
@@ -2324,3 +2324,4 @@ def save_results_to_file(results, filename):
 
 if __name__ == "__main__":
     interactive_mode()
+
