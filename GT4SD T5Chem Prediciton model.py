@@ -1,3 +1,5 @@
+#Models not loading and T5Chem not predcitng correct products.(fix other moels and try find new models)
+
 import requests
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1581,6 +1583,24 @@ class ReactionPredictor:
         
         return balanced_eq
     
+    def calculate_rate_constant(self, temperature: float, condition: str) -> Tuple[float, int]:
+        """Calculate reaction rate constant using Arrhenius equation"""
+        params = self.condition_params.get(condition, self.condition_params["ideal"])
+        A = params["A"]
+        Ea = params["Ea"]
+        
+        k = A * np.exp(-Ea / (self.R * temperature))
+        return k, params["order"]
+    
+    def calculate_rate_constant(self, temperature: float, condition: str) -> Tuple[float, int]:
+        """Calculate reaction rate constant using Arrhenius equation"""
+        params = self.condition_params.get(condition, self.condition_params["ideal"])
+        A = params["A"]
+        Ea = params["Ea"]
+        
+        k = A * np.exp(-Ea / (self.R * temperature))
+        return k, params["order"]
+    
     def simulate_reaction(self, initial_conc: float, k: float, time_points: np.ndarray, order: int) -> Tuple[np.ndarray, np.ndarray]:
         """Simulate reaction progress over time"""
         if order == 0:
@@ -1653,6 +1673,7 @@ class ReactionPredictor:
             'reactants': {},
             'products': {},
             'kinetics': {},
+            'stoichiometry': {},
             'visualizations': []
         }
         
@@ -1737,6 +1758,21 @@ class ReactionPredictor:
                 
                 results['products'][name] = smiles
                 print(f"Predicted {name}: {smiles}")
+        
+        # Calculate and display stoichiometry
+        product_names = list(results['products'].keys())
+        balanced_equation = self.display_stoichiometry(
+            valid_reactant_names, 
+            product_names,
+            reactants_smiles,
+            products_smiles
+        )
+        
+        results['stoichiometry'] = {
+            'balanced_equation': balanced_equation,
+            'reactant_names': valid_reactant_names,
+            'product_names': product_names
+        }
         
         # Calculate kinetics
         print("\n" + "-"*40)
