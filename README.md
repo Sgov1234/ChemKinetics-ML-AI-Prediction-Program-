@@ -1,159 +1,60 @@
-Chemical Reaction Pathway Prediction
-A comprehensive collection of pre-trained machine learning and AI models for chemical reaction pathway kinetic and product prediction, molecule structure visualization and modeling.
-Overview
-This repository contains implementations of various state-of-the-art ML/AI models specifically designed for computational chemistry applications. The project focuses on predicting chemical reaction pathways, kinetics, and products using different deep learning approaches.
-Features
+# BioCharge: Chemical Reaction & EDLC Analysis System
+![Python 3.7+](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
 
-Multiple Model Architectures: Implementations of ChemProp, DeepChem, T5Chem, and GT4SD models
-Reaction Pathway Prediction: Predict possible reaction pathways and intermediates
-Kinetic Analysis: Estimate reaction kinetics and rate constants
-Product Prediction: Forecast reaction products and yields
-Molecular Visualization: Structure visualization and modeling capabilities
-Pre-trained Models: Leverage existing trained models for immediate use
+A high-throughput computational chemistry platform for the **BioCharge at CSUDH** research initiative. This system specializes in predicting reaction pathways, kinetics, and products for biomass pyrolysis, with a specific focus on developing **biochar-based EDLC supercapacitors**.
 
-Models Included
-ChemProp Prediction Model
+The platform includes a custom compound database for feedstocks and a novel 4-model consensus system for high-accuracy predictions.
 
-File: ChemProp Prediction Model.py
-Graph neural network approach for molecular property prediction
-Optimized for chemical reaction analysis
+## 🚀 What's New in V3.4
 
-DeepChem Model
+* **Realistic Kinetics:** Implemented an `ExponentialDecayKinetics` model. This simulates real-world catalyst deactivation and reactant consumption, making time-based predictions more accurate.
+* **Robust Usability:** Added a `ManualSMILESHandler`. If a compound isn't found in any database, the system now prompts you to enter the SMILES string manually, preventing dead-ends.
+* **Stable Batch Processing:** Integrated a `MemoryManager` that performs automatic garbage collection during large batch jobs to prevent memory-related crashes.
+* **New Libraries:** Integrated **`chempy`** and **`chemlib`** for more advanced chemical analysis and stoichiometry.
+* **Better Visuals:** Converted the metal selectivity plot from a heatmap to a clearer **bar chart** and changed kinetic graph x-axes to **minutes** for easier interpretation.
 
-File: DeepChem Model.py
-Deep learning framework for drug discovery and chemical informatics
-Comprehensive molecular modeling capabilities
+## 🔑 Key Features
 
-T5Chem Prediction Model
+* **4-Model Consensus Prediction:** Integrates four separate models (ReactionT5v2, Molecular Transformer, MolT5, and RXNMapper) to provide a single, high-confidence product prediction.
+* **Specialized Feedstock Database:** Features a critical local database for Ailanthus alkaloids (e.g., *canthine-6-one*), lignin derivatives (e.g., *syringol*), and other pyrolysis products not found in standard PubChem libraries.
+* **EDLC Capacitance Scoring:** A custom module (`CapacitancePotentialScorer`) that analyzes predicted products and reaction kinetics to score their potential for creating high-performance EDLCs.
+* **High-Throughput Batch Processing:** Ingests and processes large-scale reaction data from Excel (`.xlsx`) files to run hundreds of simulations, saving results and visualizations automatically. Now includes memory management for stability.
+* **Advanced Kinetic Modeling:** Calculates rate constants (k), conversion (%), and half-life (t½) using the Arrhenius equation **and** a more realistic exponential decay model.
+* **Statistical Analysis:** Includes modules to perform statistical comparisons between different feedstocks (e.g., *Ailanthus* vs. *Brassica*) and assess Arrhenius fit quality.
+* **Interactive CLI:** A menu-driven interface for single-reaction analysis, batch processing, 3D molecule viewing, and report generation.
 
-File: T5Chem Prediction Model.py
-Transformer-based model for chemical synthesis prediction
-Natural language processing approach to chemistry
+## ⚙️ System Architecture
 
-GT4SD Models
+This is an integrated platform that runs from a single main script. The workflow is as follows:
 
-Files:
+1.  **Input:** The user provides reactants, conditions, and time via the interactive CLI or an Excel file.
+2.  **Lookup:** The `EnhancedPubChemAPI` module retrieves SMILES, prioritizing the custom local database. If not found, the `ManualSMILESHandler` prompts the user for input.
+3.  **Prediction:** The `FourModelConsensus` system predicts the most likely reaction products, weighted by model accuracy.
+4.  **Kinetics:** The `ExponentialDecayKinetics` module calculates realistic kinetic parameters based on the specified condition (e.g., "pyrolysis" at 500°C) and time.
+5.  **Analysis:** A suite of TIER 1-3 analysis modules score the reaction for confidence, metal selectivity, and EDLC potential.
+6.  **Output:** The system generates:
+    * A results Excel file (e.g., `reactions_results.xlsx`)
+    * PNG plots for kinetics, performance, and resource usage
+    * Interactive 3D molecule-viewer `.html` files
 
-GT4SD T5Chem Prediction model V.2.py
-GT4SD T5Chem Prediction model V.3.py
+## 🛠️ Installation
 
+1.  Clone the repository:
+    ```bash
+    git clone [your-repo-url]
+    cd [your-repo-name]
+    ```
 
-Generative Toolkit for Scientific Discovery models
-Advanced chemical space exploration and generation
+2.  Ensure you have the `requirements.txt` file (which we corrected in our last message) that includes `chempy` and `chemlib`.
 
-FutureHouse Phoenix
+3.  Install all required dependencies with one command:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-File: FutureHouse Phoenix Prediction Code.py
-Cutting-edge prediction algorithms for chemical reactions
-Enhanced accuracy for complex reaction mechanisms
+## 🖥️ Usage
 
-Installation
-Prerequisites
-bash# Python 3.7+ required
-pip install torch torchvision
-pip install rdkit-pypi
-pip install deepchem
-pip install chemprop
-pip install gt4sd
-Dependencies
-The project requires the following main libraries:
+Run the main application from your terminal:
 
-PyTorch
-RDKit
-DeepChem
-ChemProp
-GT4SD
-NumPy
-Pandas
-Matplotlib (for visualization)
-
-Usage
-Basic Example
-python# Example usage for chemical reaction prediction
-python ChemProp\ Prediction\ Model.py --input "your_molecule_smiles"
-Model-Specific Usage
-Each model can be run independently:
-bash# ChemProp model
-python "ChemProp Prediction Model.py"
-
-# DeepChem model
-python "DeepChem Model.py"
-
-# T5Chem model
-python "T5Chem Prediction Model.py"
-
-# GT4SD models
-python "GT4SD T5Chem Prediction model V.3.py"
-System Architecture
-Reaction Prediction Pipeline
-
-Compound Lookup:
-
-Primary: PubChem API for SMILES retrieval
-Fallback: USPTO MIT dataset (cached locally)
-Input validation with RDKit
-
-
-AI Model Inference:
-
-Model-specific tokenization and encoding
-Sequence-to-sequence generation for products
-SMILES validation and filtering
-
-
-Kinetic Modeling:
-
-Arrhenius equation: k = A × exp(-Ea/RT)
-Integrated rate laws (0th, 1st, 2nd order)
-Numerical integration for complex kinetics
-
-
-Visualization:
-
-Time-series concentration plots
-2D molecular structure rendering
-Rate law and equation annotations
-
-
-
-Output Files Generated
-
-reaction_progress.png - Kinetic simulation plot
-reactants_visualization.png - 2D reactant structures
-products_visualization.png - 2D product structures
-uspto_data_cache.csv - Cached molecular database (auto-generated)
-
-Reaction Conditions
-ConditionPre-exponential Factor (A)Activation Energy (Ea)Reaction OrderPyrolysis1×10¹⁵ s⁻¹180 kJ/mol1Combustion1×10¹⁴ L/(mol·s)120 kJ/mol2Electrochemical1×10¹⁰ s⁻¹40 kJ/mol1Ideal1×10¹² s⁻¹80 kJ/mol1
-Applications
-
-Drug Discovery: Predict drug-target interactions and ADMET properties
-Synthetic Chemistry: Plan synthetic routes and predict yields
-Materials Science: Design new materials with desired properties
-Chemical Safety: Assess reaction hazards and environmental impact
-Process Optimization: Optimize reaction conditions and catalysts
-
-Bug fixes
-New model implementations
-Performance improvements
-Documentation updates
-
-Requirements
-
-Python 3.7+
-CUDA-compatible GPU (recommended)
-8GB+ RAM
-Scientific computing libraries (NumPy, SciPy, Pandas)
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-Acknowledgments
-
-Citation 
-Govind, S. (2025). ChemKinetics ML/AI Prediction Models. Computational Chemistry Research. Biocharge at CSUDH
-
-ChemProp developers for the graph neural network implementation
-DeepChem team for the comprehensive chemical modeling framework
-T5Chem creators for transformer-based chemistry models
-GT4SD team for generative scientific discovery tools
-FutureHouse for advanced prediction algorithms
+```bash
+python biocharge_analysis_v3_4.py
