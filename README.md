@@ -58,3 +58,23 @@ Run the main application from your terminal:
 
 ```bash
 python Biocharge_Chemistry_Analyzer_V3.4.py
+
+
+**This will launch the main menu, allowing you to select from various modules:**
+
+1. Interactive Reaction Analysis: Analyze a single reaction by inputting reactants, conditions, and time. Generates on-the-fly kinetic data and 3D molecule plots.
+
+2. Batch Processing: Create a template Excel file or process an existing one for high-throughput analysis.
+
+3. 3D Molecule Viewer: Generate an interactive 3D .html file for any molecule.
+
+4. EDLC Capacitance Analysis: View and rank the top-scoring reactions for supercapacitor potential.
+
+5. Generate Comprehensive Report: Create a full PDF report with all analysis plots.
+
+8. Help & Documentation: Lists all new V3.4 features and tips.
+
+**📄 Citation**
+If you use this work, please cite it:
+
+Govind, S. (2025). BioCharge: Chemical Reaction & EDLC Analysis System. Computational Chemistry Research. BioCharge at CSUDH.
