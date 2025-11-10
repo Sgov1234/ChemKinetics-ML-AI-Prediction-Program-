@@ -57,4 +57,4 @@ This is an integrated platform that runs from a single main script. The workflow
 Run the main application from your terminal:
 
 ```bash
-python Biocharge_Chemistry_Analyzer.py
+python Biocharge_Chemistry_Analyzer_V3.4.py
