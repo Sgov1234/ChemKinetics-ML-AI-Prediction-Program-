@@ -1,0 +1,27 @@
+# Core Scientific & Data
+numpy
+pandas
+scipy
+scikit-learn
+seaborn
+
+# Chemistry & ML
+rdkit-pypi
+transformers
+torch
+rxnmapper
+
+# V3.4: New Chemistry Libraries
+chempy
+chemlib
+
+# Utilities
+requests
+matplotlib
+plotly
+tqdm
+psutil
+Pillow
+
+# Excel support for Pandas
+openpyxl
