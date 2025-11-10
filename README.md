@@ -1,7 +1,7 @@
 # BioCharge: Chemical Reaction & EDLC Analysis System
 ![Python 3.7+](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
 
-A high-throughput computational chemistry platform for the **BioCharge at CSUDH** research initiative. This system specializes in predicting reaction pathways, kinetics, and products for biomass pyrolysis, with a specific focus on developing **biochar-based EDLC supercapacitors**.
+A high-throughput computational chemistry platform from the **BioCharge at CSUDH** research group. This system specializes in predicting reaction pathways, kinetics, and products with a specific focus on developing **biochar-based EDLC supercapacitors**.
 
 The platform includes a custom compound database for feedstocks and a novel 4-model consensus system for high-accuracy predictions.
 
