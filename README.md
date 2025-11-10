@@ -58,7 +58,7 @@ Run the main application from your terminal:
 
 ```bash
 python Biocharge_Chemistry_Analyzer_V3.4.py
-
+ ```
 
 **This will launch the main menu, allowing you to select from various modules:**
 
