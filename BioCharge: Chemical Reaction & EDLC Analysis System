@@ -1,26 +1,3 @@
-"""
-Chemistry Code V4.2 - BioCharge Initiative
-===========================================
-
-MAJOR V4.2 UPGRADES:
-- ChemPyODESolver: Advanced 3-component kinetics (A → B → C) with analytical fallback
-- ThermodynamicsCalculator: Database-driven with NIST enthalpies and confidence tracking
-- ElectrochemicalModeler: Capacitance predictions based on kinetic efficiency
-- BiocharPlotter: Publication-quality 3-component plots
-- SolventCorrector: Activation energy adjustments for solvent effects
-- Fuzzy String Matching: Auto-corrects typos in compound names
-- Automatic Checkpointing: Saves progress every 10 reactions
-- Enhanced Logging: Comprehensive debugging with biocharge_log.txt
-
-V4.2 integrates 200+ lines of new scientific capabilities focused on
-supercapacitor research and biochar formation kinetics.
-
-Previous versions:
-- V4.1: Extended batch processing with memory management
-- V4.0: Chemical space mapping and electrochemical scoring
-- V3.4: Exponential decay kinetics and confidence scoring
-"""
-
 import requests
 import numpy as np
 import matplotlib.pyplot as plt
@@ -5864,3 +5841,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
