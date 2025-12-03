@@ -263,15 +263,6 @@ efficiency = exp(-0.5 × ((log₁₀(k) - (-2.5)) / 1.5)²) × 100%
 
 ---
 
-## 📖 Documentation
-
-- **[CALCULATION_METHODS_EXPLAINED.md](docs/CALCULATION_METHODS_EXPLAINED.md)** - Full mathematical derivations
-- **[QUICK_ANSWERS_FAQ.md](docs/QUICK_ANSWERS_FAQ.md)** - Concise reference
-- **[CHANGELOG.md](CHANGELOG.md)** - Version history
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
-
----
-
 ## 🐛 Troubleshooting
 
 **Q: ImportError: No module named 'transformers'**  
