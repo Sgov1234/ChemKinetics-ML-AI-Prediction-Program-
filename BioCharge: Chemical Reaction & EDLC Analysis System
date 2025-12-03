@@ -5827,11 +5827,11 @@ def main():
                         print()
                     
                     print(f"💡 To open any file, paste this in your browser:")
-                    print(f"   file:///{html_files[0].absolute()}")
+                    print(f"file:///{png_files[0].absolute()}")
         
         elif choice == "10":
             print("\n👋 Thank you for using the Enhanced Chemistry System V4.0")
-            print("   🎯 Batch Processing Repaired - BioCharge Initiative")
+            print("   🎯 Batch Processing Repaired - BioCharge at CSUDH")
             print("   Your analysis data has been saved.")
             break
         
@@ -5841,4 +5841,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
