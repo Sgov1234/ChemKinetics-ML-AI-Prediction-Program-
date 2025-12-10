@@ -420,34 +420,6 @@ A: Minimum 5 samples, optimal 50+. Even 10-20 samples improve predictions signif
 
 ---
 
-## 🚀 Roadmap
-
-### ✅ V5.0 (Released December 2024)
-- [x] DFT Calculator (xTB/ORCA/Gaussian)
-- [x] Graph Neural Networks
-- [x] Continuous learning from experimental data
-- [x] Enhanced batch processing
-
-### V5.1 (Q1 2025)
-- [ ] Multi-GPU DFT batch processing
-- [ ] Real-time experimental feedback loop
-- [ ] Uncertainty quantification
-- [ ] Enhanced 3D visualization (NGL Viewer)
-
-### V5.2 (Q2 2025)
-- [ ] Active learning (suggests next experiments)
-- [ ] Molecular dynamics integration
-- [ ] Web interface (Streamlit/Gradio)
-- [ ] Cloud deployment (Docker + API)
-
-### V6.0 (Q3 2025)
-- [ ] Generative models for novel structures
-- [ ] Multi-objective optimization (capacitance + cost + stability)
-- [ ] Transfer learning across materials classes
-- [ ] Automated experimental design
-
----
-
 ## 🎓 Citation
 
 If you use Chemistry Code V5.0 in your research:
@@ -510,20 +482,19 @@ MIT License - See [LICENSE](LICENSE) file for details.
 
 ## 📞 Contact
 
-**Author:** Shaan Patel  
-**Project:** BioCharge Initiative  
+**Author:** Shaan Govind  
+**Project:** BioCharge at CSUDH  
 **Institution:** California State University Dominguez Hills  
 **Program:** BS Cellular and Molecular Biology (Graduating Dec 2025)
 
-**Email:** [your.email@csudh.edu]  
-**LinkedIn:** [linkedin.com/in/shaan-patel]  
-**GitHub:** [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+**Email:** sgovind1@toromail.csudh.edu
+**LinkedIn:** linkedin.com/in/shaangovind
 
 **Want to collaborate?** I'm looking for positions in:
-- Precision fermentation
+- Industrial Biotechnology
 - Agricultural biotechnology  
 - Waste valorization
-- Computational materials science
+- Sustainable Energy 
 
 ---
 
