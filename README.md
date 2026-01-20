@@ -23,7 +23,7 @@
 - 4-layer Graph Attention Network with 44-dimensional node features
 - **85-95% accuracy** after training on 50+ samples
 
-### Combined Accuracy: 98%+
+### Combined Accuracy: 88%+
 All three systems work together:
 1. **Quantum level (DFT)**: Physics-based electronic structure
 2. **Neural level (GNN)**: Learns your lab's patterns
