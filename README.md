@@ -1,4 +1,4 @@
-# BioCharge at CSUDH: ML/AI Quantum Chemistry and EDLC Analyzer 🧪⚡🤖
+# BioCharge at CSUDH: ML/AI Quantum Chemistry and EDLC Analyzer 
 
 > **AI-Powered Platform for Biochar Supercapacitor Discovery**  
 > Predict reaction products, calculate quantum properties, and train neural networks on YOUR lab data—all before running experiments.
@@ -9,21 +9,21 @@
 
 ---
 
-### ⚛️ DFT Calculator (Quantum Physics)
+### DFT Calculator (Quantum Physics)
 - Calculates HOMO, LUMO, band gap, and dipole moment
 - Interfaces with xTB, ORCA, or Gaussian
 - 30 seconds to 30 minutes per molecule
 - **95-99% accuracy** depending on software used
 - Find conductors (band gap < 0.5 eV) for supercapacitors
 
-### 🧠 Graph Neural Network (Learns from You!)
+### Graph Neural Network (Learns from You!)
 - Predicts capacitance, conductivity, and stability in **under 1 second**
 - **Trains on YOUR experimental data** (Option 13)
 - Gets smarter every time you use it
 - 4-layer Graph Attention Network with 44-dimensional node features
 - **85-95% accuracy** after training on 50+ samples
 
-### 📈 Combined Accuracy: 98%+
+### Combined Accuracy: 98%+
 All three systems work together:
 1. **Quantum level (DFT)**: Physics-based electronic structure
 2. **Neural level (GNN)**: Learns your lab's patterns
@@ -33,7 +33,7 @@ All three systems work together:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -56,7 +56,7 @@ python3 chemistry_code_v5_0.py
 ```
 
 ```
-📋 MAIN MENU:
+MAIN MENU:
 1. Interactive Reaction Analysis
 [Choose 1]
 
@@ -69,43 +69,43 @@ Reaction condition: pyrolysis
 
 **V5.0 Output (includes new DFT + GNN data):**
 ```
-✅ BALANCED EQUATION
+ BALANCED EQUATION
 C₂₀H₂₄O₇ + Al → [Biochar Product] + H₂
 
 🔬 THERMODYNAMICS
    ΔH = -342.1 kJ/mol (Exothermic)
    
-⚛️ DFT PROPERTIES (NEW in V5.0!)
+DFT PROPERTIES (NEW in V5.0!)
    HOMO: -5.2 eV
    LUMO: -2.1 eV
    Band Gap: 3.1 eV (Semiconductor)
    Dipole: 3.4 Debye
 
-🤖 GNN PREDICTIONS (NEW in V5.0!)
+GNN PREDICTIONS (NEW in V5.0!)
    Capacitance: 125.3 F/g
    Conductivity: 2.1 S/cm
    Stability: 87/100
 
-📈 KINETICS
+KINETICS
    k = 1.89×10⁻² s⁻¹
    Kinetic Efficiency: 87.5%
 
-⚡ EDLC Score: 72.7/100 (Good)
+EDLC Score: 72.7/100 (Good)
 ```
 
 ---
 
-## 📊 What Does This Do?
+## What Does This Do?
 
 Chemistry Code predicts biochar supercapacitor performance **before** you run expensive pyrolysis experiments:
 
-✅ **Reaction products** - AI prediction with 97.5% accuracy (4 transformer models)  
-✅ **3-component kinetics** - ODE solver captures intermediate species  
-✅ **Thermodynamics** - NIST database integration (±10 kJ/mol)  
-✅ **⚛️ Quantum properties (NEW!)** - DFT calculations for electronic structure  
-✅ **🧠 Neural predictions (NEW!)** - GNN trained on YOUR lab data  
-✅ **EDLC scoring** - Rank materials 0-100 for supercapacitors  
-✅ **Batch processing** - Screen 100+ materials in minutes  
+**Reaction products** - AI prediction with 97.5% accuracy (4 transformer models)  
+**3-component kinetics** - ODE solver captures intermediate species  
+**Thermodynamics** - NIST database integration (±10 kJ/mol)  
+**Quantum properties (NEW!)** - DFT calculations for electronic structure  
+**Neural predictions (NEW!)** - GNN trained on YOUR lab data  
+**EDLC scoring** - Rank materials 0-100 for supercapacitors  
+**Batch processing** - Screen 100+ materials in minutes  
 
 **V5.0 Performance:**
 - **98%+ combined accuracy** (transformers + DFT + trained GNN)
@@ -114,7 +114,7 @@ Chemistry Code predicts biochar supercapacitor performance **before** you run ex
 
 ---
 
-## 💻 New V5.0 Features
+## New V5.0 Features
 
 ### Option 11: DFT Calculations
 
