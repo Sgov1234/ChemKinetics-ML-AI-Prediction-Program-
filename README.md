@@ -64,7 +64,7 @@ Enter reactant 1: ailanthone
 Enter reactant 2: aluminum
 Temperature (°C): 500
 Time (hours): 2
-Reaction condition: pyrolysis
+Reaction condition: electrochemical
 ```
 
 **V5.0 Output (includes new DFT + GNN data):**
