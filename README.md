@@ -1,6 +1,6 @@
 # BioCharge at CSUDH: ML/AI Quantum Chemistry and EDLC Analyzer 
 
-> **AI-Powered Platform for Biochar Supercapacitor Discovery**  
+> **ML-Powered Platform for Biochar Supercapacitor Analysis**  
 > Predict reaction products, calculate quantum properties, and train neural networks on YOUR lab data—all before running experiments.
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
