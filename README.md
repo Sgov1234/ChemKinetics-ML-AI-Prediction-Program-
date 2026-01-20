@@ -70,7 +70,7 @@ Reaction condition: pyrolysis
 **V5.0 Output (includes new DFT + GNN data):**
 ```
  BALANCED EQUATION
-C₂₀H₂₄O₇ + Al → [Biochar Product] + H₂
+C₂₀H₂₄O₇ + Al → [Reaction Product] + H₂
 
 🔬 THERMODYNAMICS
    ΔH = -342.1 kJ/mol (Exothermic)
