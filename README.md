@@ -1,4 +1,4 @@
-# BioCharge at CSUDH: ML/AI Quantum Chemistry and EDLC Analyzer 
+# BioCharge at CSUDH: ML Chemistry and EDLC Analyzer 
 
 > **ML-Powered Platform for Biochar Supercapacitor Analysis**  
 > Predict reaction products, calculate quantum properties, and train neural networks on YOUR lab data—all before running experiments.
