@@ -485,34 +485,12 @@ MIT License - See [LICENSE](LICENSE) file for details.
 **Author:** Shaan Govind  
 **Project:** BioCharge at CSUDH  
 **Institution:** California State University Dominguez Hills  
-**Program:** BS Cellular and Molecular Biology (Graduating Dec 2025)
+**Program:** BS Cellular and Molecular Biology
 
 **Email:** sgovind1@toromail.csudh.edu
 **LinkedIn:** linkedin.com/in/shaangovind
 
-**Want to collaborate?** I'm looking for positions in:
-- Industrial Biotechnology
-- Agricultural biotechnology  
-- Waste valorization
-- Sustainable Energy 
-
 ---
-
-## 📊 Quick Reference
-
-### V4.2.1 vs V5.0 Comparison
-
-| Feature | V4.2.1 | V5.0 |
-|---------|--------|------|
-| Lines of Code | 5,844 | 6,856 |
-| Classes | 30 | 32 |
-| Accuracy | 97.5% | 98%+ |
-| Menu Options | 10 | 15 |
-| Quantum Chemistry | ❌ | ✅ |
-| Neural Networks | ❌ | ✅ |
-| Learns from Data | ❌ | ✅ |
-| Properties Predicted | 5 | 13 |
-| Success Rate | 62% | 65%+ |
 
 ### Performance Metrics
 
